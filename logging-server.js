@@ -8,7 +8,13 @@
 const http = require("http");
 
 function usage() {
-	console.log(`Usage: ${process.argv[0]} [--port <port> (default port is 1234)] [--help] [--log-headers]`);
+	console.log(`Usage: logging-server [options]
+
+options:
+  --help        show this message and quit
+  --port <port> run server on specified port (default is port 1234)
+  --log-headers log HTTP request headers (does not by default)
+`)
 }
 
 if (process.argv.indexOf("--help") !== -1) {
