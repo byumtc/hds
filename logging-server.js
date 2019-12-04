@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 /* This is a simple server intended to do two things:
  *   1. Log all requests it gets to stdout
  *   2. Reply to all requests with 200 OK status
