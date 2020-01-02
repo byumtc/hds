@@ -7,39 +7,38 @@ HDS is designed to do two things:
 
 # Installation
 ```bash
-npm install -g https://github.com/byumtc/logging-server.git
+npm install -g https://github.com/byumtc/hds.git
 ```
 
 # Usage
 ```bash
-Usage: logging-server [options]
+usage: hds [-h] [-v] [--port PORT] [-a ADDRESS] [--log-headers] [--log-data]
 
-options:
-  --help        show this message and quit
-  --port <port> run server on specified port (default is port 1234)
-  --log-headers log HTTP request headers (does not by default)
+Happy Dump Server
+
+Optional arguments:
+  -h, --help            Show this help message and exit.
+  -v, --version         Show program's version number and exit.
+  --port PORT, -p PORT  Port to listen on
+  -a ADDRESS, --address ADDRESS
+                        Address (interface) to listen on
+  --log-headers         Log request headers
+  --log-data            Log request data
 ```
 
 # Examples
-- Log all incoming HTTP traffic on port 8000:
+- Log all incoming HTTP traffic at 127.0.0.1:8000:
 ```bash
-logging-server --port 8000
+hds
 ```
-- Log all incoming HTTP traffic, including headers, on port 8000:
+- Log all incoming HTTP traffic, including headers, on port 1234:
 ```bash
-logging-server --port 8000 --log-headers
+hds --port 1234 --log-headers
 ```
-- Example output WITHOUT headers (the default):
-```
-POST /log {"some-key": "some-value"}
-```
-- Example output WITH headers:
-```
-POST /log
-HEADERS: {"user-agent": "Mozilla...whatever",
-"content-type": "application/json",
-"etc": "etc"}
-DATA: {"some-key": "some-value"}
+- Log all incoming HTTP traffic, including headers and data, on port 54321:
+```bash
+hds --port 54321 --log-headers --log-data
 ```
 
 # License
+To do
