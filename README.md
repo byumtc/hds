@@ -1,9 +1,9 @@
-# logging-server
-logging-server is designed to do two things:
+# hds - Happy Dump Server :smile:
+v
+HDS is designed to do two things:
 1. Dump requests to stdout
 2. Only respond with 200 OK responses to all requests
 
-You might call it the "happy-dump-server" :smile:
 
 # Installation
 ```bash

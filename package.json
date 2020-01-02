@@ -1,14 +1,17 @@
 {
-  "name": "logging-server",
+  "name": "happy-dump-server",
   "version": "1.0.0",
   "description": "A simple node HTTP server to return 200 OK responses and log requests",
   "bin": {
-    "logging-server": "logging-server.js"
+    "hds": "happy-dump-server.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Kimball Leavitt",
   "license": "MIT",
-  "repository": "https://github.com/byumtc/logging-server.git"
+  "repository": "https://github.com/byumtc/logging-server.git",
+  "dependencies": {
+    "argparse": "^1.0.10"
+  }
 }
