@@ -1,5 +1,5 @@
 # hds - Happy Dump Server :smile:
-v
+
 HDS is designed to do two things:
 1. Dump requests to stdout
 2. Only respond with 200 OK responses to all requests
