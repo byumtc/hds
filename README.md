@@ -41,4 +41,5 @@ hds --port 54321 --log-headers --log-data
 ```
 
 # License
-To do
+
+See [LICENSE](https://github.com/byumtc/hds/blob/master/LICENSE)
